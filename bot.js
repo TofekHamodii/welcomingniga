@@ -1,9 +1,13 @@
-const Discord = require('discord.js');
+const Discord = require("discord.js");
 const client = new Discord.Client();
 
-client.on('guildMemberAdd' , member => {
-const room = client.channel.get("508838387449593879")
-room.send("**Welcome To # -  Universe Town , :champagne_glass: ** "+member)
-});
+
+
+
+client.on('ready', () => {
+    console.log(`Logged in as ${client.user.tag} !`);
+          client.user.setActivity("# -  Universe Town ",{type: 'WATCHING'});
+  
+  });
 
 client.login(process.env.BOT_TOKEN);
