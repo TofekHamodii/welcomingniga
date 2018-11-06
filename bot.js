@@ -2,7 +2,7 @@ const Discord = require('discord.js');
 const client = new Discord.Client();
 
 client.on('guildMemberAdd' , member => {
-const room = client.channel.get("اي دي الروم")
+const room = client.channel.get("508838387449593879")
 room.send("welcome to Server "+member)
 });
 
